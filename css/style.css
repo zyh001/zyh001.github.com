@@ -130,7 +130,7 @@ body,
   font-weight: bold;
   cursor: pointer;
   background: #fff;
-  color: #79a8ae;
+  color: #ff55bb;
   opacity: .9;
 
   -webkit-transition: opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
