@@ -130,7 +130,7 @@ body,
   font-weight: bold;
   cursor: pointer;
   background: #fff;
-  color: #ff55bb;
+  color: #72e3e3;
   opacity: .9;
 
   -webkit-transition: opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
@@ -259,7 +259,7 @@ body,
   font-size: 10px;
   line-height: 10px;
   color: #fff;
-  background: #90c9d1;
+  background: #ff55bb;
   padding: 5px 10px 4px 10px;
   border-radius: 3px;
 }
