@@ -4,7 +4,7 @@ var WINDOW_WIDTH = 920;
 		var WINDOW_HEIGHT = 400;
 		var RADIUS = 7; //球半径
 		var NUMBER_GAP = 10; //数字之间的间隙
-		var u=0.65; //碰撞能量损耗系数
+		var u=0.62; //碰撞能量损耗系数
 		var context; //Canvas绘制上下文
 		var balls = []; //存储彩色的小球
 		const colors = ["#33B5E5","#0099CC","#AA66CC","#9933CC","#99CC00","#669900","#FFBB33","#FF8800","#FF4444","#CC0000"]; //彩色小球的颜色
