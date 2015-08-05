@@ -1,17 +1,60 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Canvas跳动彩球时间动画特效 - 站长素材</title>
-<style>
-*{margin:0;padding:0;list-style:none;border:none;}
-#zzsc{width:920px;margin:100px auto;}
-</style>
-<script type="text/javascript" src="http://fdos.xyz/stylesheets/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="http://fdos.xyz/stylesheets/zzsc.js"></script>
+
+  <meta charset="UTF-8">
+
+  <title>HTML5粒子效果文字动画 - 站长素材</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
 </head>
+
 <body>
-<div id="zzsc"></div>
+<canvas class="canvas"></canvas>
+
+<div class="help">?</div> 
+
+<div class="ui">
+  <input class="ui-input" type="text" />
+  <span class="ui-return">↵</span>
+</div>
+
+<div class="overlay">
+  <div class="tabs">
+    <div class="tabs-labels"><span class="tabs-label">Commands</span><span class="tabs-label">Info</span><span class="tabs-label">Share</span></div>
+
+    <div class="tabs-panels">
+      <ul class="tabs-panel commands">
+        <li class="commands-item"><span class="commands-item-title">Text</span><span class="commands-item-info" data-demo="Hello :)">Type anything</span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Countdown</span><span class="commands-item-info" data-demo="#countdown 10">#countdown<span class="commands-item-mode">number</span></span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Time</span><span class="commands-item-info" data-demo="#time">#time</span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Rectangle</span><span class="commands-item-info" data-demo="#rectangle 30x15">#rectangle<span class="commands-item-mode">width x height</span></span><span class="commands-item-action">Demo</span></li>
+        <li class="commands-item"><span class="commands-item-title">Circle</span><span class="commands-item-info" data-demo="#circle 25">#circle<span class="commands-item-mode">diameter</span></span><span class="commands-item-action">Demo</span></li>
+
+        <li class="commands-item commands-item--gap"><span class="commands-item-title">Animate</span><span class="commands-item-info" data-demo="The time is|#time|#countdown 3|#icon thumbs-up"><span class="commands-item-mode">command1</span>&nbsp;|<span class="commands-item-mode">command2</span></span><span class="commands-item-action">Demo</span></li>
+      </ul>
+
+      <div class="tabs-panel ui-details">
+        <div class="ui-details-content">
+          <h1>Shape Shifter</h1>
+        </div>
+      </div>
+
+      <div class="tabs-panel ui-share">
+        <div class="ui-share-content">
+          <h1>Sharing</h1>
+          <p>Simply add <em>?a=</em> to the current URL to share any static or animated text. Examples:</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/index.js"></script>
 <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
 <p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
 <p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
