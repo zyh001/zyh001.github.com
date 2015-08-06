@@ -44,11 +44,11 @@ body,
   background: -webkit-linear-gradient(top, rgb(163, 235, 189) 0%, rgb(16, 93, 145) 110%);
   background: -webkit-linear-gradient(top, rgb(165, 103, 189) 0%, rgb(75, 233, 214) 120%);
   */
-  background: -webkit-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(55, 148, 192) 120%);
-  background: -moz-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(55, 148, 192) 120%);
-  background: -o-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(55, 148, 192) 120%);
-  background: -ms-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(55, 148, 192) 120%);
-  background: linear-gradient(top, rgb(255, 132, 174) 0%, rgb(55, 148, 192) 120%);
+  background: -webkit-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(255, 185, 223) 120%);
+  background: -moz-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(255, 185, 223) 120%);
+  background: -o-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(255, 185, 223) 120%);
+  background: -ms-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(255, 185, 223) 120%);
+  background: linear-gradient(top, rgb(255, 132, 174) 0%, rgb(255, 185, 223) 120%);
 }
 
 .body--ready .overlay {
