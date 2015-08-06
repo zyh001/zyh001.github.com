@@ -44,11 +44,12 @@ body,
   background: -webkit-linear-gradient(top, rgb(163, 235, 189) 0%, rgb(16, 93, 145) 110%);
   background: -webkit-linear-gradient(top, rgb(165, 103, 189) 0%, rgb(75, 233, 214) 120%);
   */
-  background: -webkit-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(255, 185, 255) 120%);
-  background: -moz-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(255, 185, 255) 120%);
-  background: -o-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(255, 185, 255） 120%);
-  background: -ms-linear-gradient(top, rgb(255, 132, 174) 0%, rgb(255, 185, 255) 120%);
-  background: linear-gradient(top, rgb(255, 132, 174) 0%, rgb(255, 185, 255) 120%);
+
+  background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+  background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+  background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+  background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+  background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
 }
 
 .body--ready .overlay {
@@ -129,7 +130,7 @@ body,
   font-weight: bold;
   cursor: pointer;
   background: #fff;
-  color: #72e3e3;
+  color: #79a8ae;
   opacity: .9;
 
   -webkit-transition: opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
@@ -258,7 +259,7 @@ body,
   font-size: 10px;
   line-height: 10px;
   color: #fff;
-  background: #ff55bb;
+  background: #90c9d1;
   padding: 5px 10px 4px 10px;
   border-radius: 3px;
 }
