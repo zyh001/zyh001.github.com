@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width" />
+<title>庆祝抗战胜利70周年-FD</title>
+<link id="common_css" rel="stylesheet" href="css/style.css">
+<script src="js/viewport.js"></script>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	margin:0; 
+	padding:0;
+	font-family: Verdana, Geneva, sans-serif;
+	background-color:#FFF;
+	background:url(images/bg.jpg);
+	background-size: 100% 100%;
+}
+h1 {
+    background-color: #333;
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:    -moz-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:     -ms-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:      -o-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    color: #fff0f5;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1;
+    margin:0;
+    padding: 0.5em;
+    text-align: center;
+    text-shadow: 0 .05em .05em hsla(0,0%,0%,.1);
+}
+h1 p a {
+	margin:20px 0;
+	font-size:16px;
+	color:#ccc;
+	text-decoration:none;
+}
+hr {
+    border: 1px solid #333;
+    margin: 0 0 2.5em 0;
+}
+h1 p a:hover {
+	color:#FFF;
+}
+.content hr {
+	border:0 none;
+	margin:0 0 1em 0;
+}
+label:after {
+    color: #fff;
+    content: '#';
+}
+input {
+    background: #fff0f5;
+    border: 1px solid #222;
+    color: #333;
+    margin-right: 5.5em;
+    padding: .5em;
+}
+.content {
+    font-size: 100%;
+    margin: 0 auto;
+	display:inline-block;;
+    padding: 3em 6em;
+    text-align: left;
+	padding:0;
+}
+.content p {
+    color: #333;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1;
+    margin: -1em 1em 0 0;
+    width: 6em;
+    vertical-align: middle;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1;
+    margin: 2em 0 0 0;
+    padding: 2em;
+    text-align: center;
+}
+.attribution {
+    color: #888;
+    margin-top: 1em;
+    text-align: right;
+    width: 100%;
+}
+.attribution a {
+    color: #888;
+	text-decoration:none;
+}
+.attribution a:hover,
+.attribution a:focus {
+    color: #fff;
+}
+
+/* Button - these styles are the good stuff */
+
+.button {
+    background-color: #999;
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:    -moz-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:     -ms-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:      -o-linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    background-image:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.1));
+    border: none;
+    border-radius: .5em;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.2),
+                inset 0 2px 0 hsla(0,0%,100%,.1),
+                inset 0 1.2em 0 hsla(0,0%,100%,0.1),
+                inset 0 -.2em 0 hsla(0,0%,100%,.1),
+                inset 0 -.25em 0 hsla(0,0%,0%,.25),
+                0 .25em .25em hsla(0,0%,0%,.05);
+    color: #444;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0 .5em 1em;
+    padding: .5em 1.5em .75em;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+    vertical-align: middle;
+}
+.button:hover {
+    outline: none;
+}
+.button:hover,
+.button:focus {
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.2),
+                inset 0 2px 0 hsla(0,0%,100%,.1),
+                inset 0 1.2em 0 hsla(0,0%,100%,.1),
+                inset 0 -.2em 0 hsla(0,0%,100%,.1),
+                inset 0 -.25em 0 hsla(0,0%,0%,.25),
+                inset 0 0 0 3em hsla(0,0%,100%,.2),
+                0 .25em .25em hsla(0,0%,0%,.05);
+}
+.button:active {
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.2),
+                inset 0 2px 0 hsla(0,0%,100%,.1),
+                inset 0 1.2em 0 hsla(0,0%,100%,.1),
+                inset 0 0 0 3em hsla(0,0%,100%,.2),
+                inset 0 .25em .5em hsla(0,0%,0%,.05),
+                0 -1px 1px hsla(0,0%,0%,.1),
+                0 1px 1px hsla(0,0%,100%,.25);
+    margin-top: .25em;
+    outline: none;
+    padding-bottom: .5em;
+}
+
+/* Light Text */
+
+.lightText {
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+                inset 0 2px 0 hsla(0,0%,100%,.1),
+                inset 0 1.2em 0 hsla(0,0%,100%,.05),
+                inset 0 -.2em 0 hsla(0,0%,100%,.1),
+                inset 0 -.25em 0 hsla(0,0%,0%,.5),
+                0 .25em .25em hsla(0,0%,0%,.1);
+    color: #fff;
+    text-shadow: 0 -1px 1px hsla(0,0%,0%,.25);
+}
+.lightText:hover,
+.lightText:focus {
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+                inset 0 2px 0 hsla(0,0%,100%,.1),
+                inset 0 1.2em 0 hsla(0,0%,100%,.05),
+                inset 0 -.2em 0 hsla(0,0%,100%,.1),
+                inset 0 -.25em 0 hsla(0,0%,0%,.5),
+                inset 0 0 0 3em hsla(0,0%,100%,.2),
+                0 .25em .25em hsla(0,0%,0%,.1);
+}
+.lightText:active {
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.25),
+                inset 0 2px 0 hsla(0,0%,100%,.1),
+                inset 0 1.2em 0 hsla(0,0%,100%,.05),
+                inset 0 0 0 3em hsla(0,0%,100%,.2),
+                inset 0 .25em .5em hsla(0,0%,0%,.05),
+                0 -1px 1px hsla(0,0%,0%,.1),
+                0 1px 1px hsla(0,0%,100%,.25);
+}
+
+/* Large */
+
+.large {
+    font-size: 1.25em;
+}
+
+/* Medium */
+
+.medium {
+    font-size: 1em;
+}
+
+/* Small */
+
+.small {
+    font-size: .75em;
+}
+
+/* Regular */
+
+.regular {
+    border-radius: .5em;
+}
+
+/* Square */
+
+.square {
+    border-radius: .25em;
+}
+
+/* Round */
+
+.round {
+    border-radius: 1.25em;
+}
+
+/* Red */
+
+.red {
+    background-color: #ff6c6f;
+}
+
+/* Orange */
+
+.orange {
+    background-color: #f6cf6f;
+}
+
+/* Yellow */
+
+.yellow {
+    background-color: #fff6c6;
+}
+
+/* Green */
+
+.green {
+    background-color: #6fcf6f;
+}
+
+/* Blue */
+
+.blue {
+    background-color: #6fc6ff;
+}
+
+/* Purple */
+
+.purple {
+    background-color: #f6c6ff;
+}
+
+/* White */
+
+.white {
+    background-color: #eee;
+}
+
+/* Grey */
+
+.grey {
+    background-color: #999;
+}
+
+/* Black */
+
+.black {
+    background-color: #444;
+}
+
+/* Custom */
+
+.custom {
+    background-color: #fff0f5; /* Set the button color here */
+    color: #444; /* Remove this for a dark background */
+}
+img {
+	display: block;
+}
+.wrap {
+	height: 100%;
+	width: 640px;
+	margin: 0 auto;
+	background: #c03430;
+	position: relative;
+	animation:opc 3s ease-in 1s backwards;
+	-webkit-animation:opc 3s ease-in 1s backwards;
+	overflow:hidden
+}
+.yanhua1 {
+	border-radius:50%;
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	background: linear-gradient(rgba(115,197,251,1), rgba(115,197,251,1)), url(images/hua1.png) no-repeat center center;
+	background: -webkit-linear-gradient(rgba(115,197,251,1),rgba(115,197,251,1)), url(images/hua1.png) no-repeat center center;
+	background-size: 100% 100%,100% 100%;
+	top: 50px;
+	left: 45px;
+	z-index: 1;
+	animation: yanhua 3s ease-out infinite 8s backwards,yanse1 3s ease-out  infinite 8s backwards,touming 3s ease-out infinite 8s backwards;
+	-webkit-animation: yanhua 3s ease-out infinite 8s backwards,yanse1 3s ease-out infinite 8s backwards,touming 3s ease-out infinite 8s backwards;
+	box-shadow:0 0 20px rgba(115,197,251,1);
+}
+.yanhua2 {
+	border-radius:50%;
+	position: absolute;
+	width: 330px;
+	height: 330px;
+	background: linear-gradient(rgba(245,231,210,1),rgba(245,231,210,1)), url(images/hua2.png) no-repeat center center;
+	background: -webkit-linear-gradient(rgba(245,231,210,1),rgba(245,231,210,1)), url(images/hua2.png) no-repeat center center;
+	background-size: 100% 100%,100% 100%;
+	top: 230px;
+	left: 277px;
+	z-index: 2;
+	animation: yanhua 3s ease-out infinite 9s backwards,yanse2 3s ease-out infinite backwards 9s,touming 3s ease-out infinite 9s backwards;
+	-webkit-animation: yanhua 3s ease-out infinite 9s backwards,yanse2 3s ease-out infinite backwards 9s,touming 3s ease-out infinite 9s backwards;
+	box-shadow:0 0 20px rgba(245,231,210,1);
+}
+.yanhua3 {
+	border-radius:50%;
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	background: linear-gradient(rgba(154,134,255,1),rgba(154,134,255,1)), url(images/hua3.png) no-repeat center center;
+	background: -webkit-linear-gradient(rgba(154,134,255,1), rgba(154,134,255,1)), url(images/hua3.png) no-repeat center center;
+	background-size: 100% 100%,100% 100%;
+	top: 384px;
+	left: 44px;
+	z-index: 3;
+	animation: yanhua 3s ease-out infinite 8.5s backwards,yanse3 3s ease-out infinite backwards 8.5s,touming 3s ease-out infinite 8.5s backwards;
+	-webkit-animation: yanhua 3s ease-out infinite 8.5s backwards,yanse3 3s ease-out infinite backwards 8.5s,touming 3s ease-out infinite 8.5s backwards;
+}
+.land {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 640px;
+	z-index: 9
+}
+.land img {
+	width: 100%
+}
+.ren1 {
+	width: 184px;
+	height: 235px;
+	left: 48px;
+	bottom: 140px;
+	position: absolute;
+	z-index: 20;
+	animation:opc 3s linear 4s backwards;
+	-webkit-animation:opc 3s linear 4s backwards;
+}
+.ren1 img {
+	width: 100%;
+	height: 100%
+}
+.ren2 {
+	width: 136px;
+	height: 200px;
+	left: 212px;
+	bottom: 140px;
+	position: absolute;
+	z-index: 20;
+	animation:opc 3s linear 7.5s backwards;
+	-webkit-animation:opc 3s linear 7.5s backwards;
+}
+.ren2 img {
+	width: 100%;
+	height: 100%
+}
+.ren3 {
+	width: 97px;
+	height: 114px;
+	left: 332px;
+	bottom: 140px;
+	position: absolute;
+	z-index: 20;
+	animation:opc 3s linear 6s backwards;
+	-webkit-animation:opc 3s linear 6s backwards;
+}
+.ren3 img {
+	width: 100%;
+	height: 100%
+}
+.ren4 {
+	width: 173px;
+	height: 225px;
+	left: 406px;
+	bottom: 140px;
+	position: absolute;
+	z-index: 20;animation:opc 3s linear 5s backwards;
+	-webkit-animation:opc 3s linear 5s backwards;
+}
+.ren4 img {
+	width: 100%;
+	height: 100%
+}
+.zhounian {
+	position: absolute;
+	width: 221px;
+	height: 199px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 250px;
+	z-index: 99;
+	animation:topopc 1.5s linear 12s backwards;
+	-webkit-animation:topopc 1.5s linear 12s backwards;
+}
+.zhounian2 {
+	position: absolute;
+	width: 406px;
+	height: 44px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 40px;
+	z-index: 99;
+	animation:opc 1.5s ease-in 9.5s backwards;
+	-webkit-animation:opc 1.5s ease-in 9.5s backwards;
+}
+ @keyframes yanhua {
+ 0% {
+transform:translateY(300%) scale(0.05)
+}
+ 50% {
+transform:translateY(0%) scale(0.05)
+}
+ 100% {
+transform:translateY(0%) scale(1)
+}
+}
+@-webkit-keyframes yanhua {
+ 0% {
+-webkit-transform: translateY(300%) scale(0.05)
+}
+ 50% {
+-webkit-transform:translateY(0%) scale(0.05)
+}
+ 100% {
+-webkit-transform:translateY(0%) scale(1)
+}
+}
+ @keyframes yanse1 {
+ 0% {
+	 background: linear-gradient(rgba(115,197,251,1), rgba(115,197,251,1)), url(images/hua1.png) no-repeat center center;
+	 box-shadow:0 0 20px rgba(115,197,251,1);
+}
+49% {
+ background: linear-gradient(rgba(115,197,251,1), rgba(115,197,251,1)), url(images/hua1.png) no-repeat center center;
+  box-shadow:0 0 20px rgba(115,197,251,1);
+}
+ 50% {
+ background: linear-gradient(rgba(115,197,251,0), rgba(115,197,251,0)), url(images/hua1.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(115,197,251,0);
+}
+ 100% {
+ background: linear-gradient(rgba(115,197,251,0), rgba(115,197,251,0)), url(images/hua1.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(115,197,251,0);
+}
+}
+ @-webkit-keyframes yanse1 {
+  0% {
+	 background:-webkit-linear-gradient(rgba(115,197,251,1), rgba(115,197,251,1)), url(images/hua1.png) no-repeat center center;
+	 box-shadow:0 0 20px rgba(115,197,251,1);
+}
+49% {
+ background:-webkit-linear-gradient(rgba(115,197,251,1), rgba(115,197,251,1)), url(images/hua1.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(115,197,251,1);
+}
+ 50% {
+ background:-webkit-linear-gradient(rgba(115,197,251,0), rgba(115,197,251,0)), url(images/hua1.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(115,197,251,0);
+}
+ 100% {
+ background: -webkit-linear-gradient(rgba(115,197,251,0), rgba(115,197,251,0)), url(images/hua1.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(115,197,251,0);
+}
+}
+ @keyframes yanse2 {
+ 0% {
+	 background: linear-gradient(rgba(245,231,210,1), rgba(245,231,210,1)), url(images/hua2.png) no-repeat center center;
+	 box-shadow:0 0 20px rgba(245,231,210,1);
+}
+49% {
+ background: linear-gradient(rgba(245,231,210,1), rgba(245,231,210,1)), url(images/hua2.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(245,231,210,1);
+}
+ 50% {
+ background: linear-gradient(rgba(245,231,210,0), rgba(245,231,210,0)), url(images/hua2.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(245,231,210,0);
+}
+ 100% {
+ background: linear-gradient(rgba(245,231,210,0), rgba(245,231,210,0)), url(images/hua2.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(245,231,210,0);
+}
+}
+ @-webkit-keyframes yanse2 {
+  0% {
+	 background:-webkit-linear-gradient(rgba(245,231,210,1), rgba(245,231,210,1)), url(images/hua2.png) no-repeat center center;
+	 box-shadow:0 0 20px rgba(115,197,251,1);
+}
+49% {
+ background:-webkit-linear-gradient(rgba(245,231,210,1), rgba(245,231,210,1)), url(images/hua2.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(245,231,210,1);
+}
+ 50% {
+ background:-webkit-linear-gradient(rgba(245,231,210,0), rgba(245,231,210,0)), url(images/hua2.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(245,231,210,0);
+}
+ 100% {
+ background: -webkit-linear-gradient(rgba(245,231,210,0), rgba(245,231,210,0)), url(images/hua2.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(245,231,210,0);
+}
+}
+ @keyframes yanse3 {
+ 0% {
+	 background: linear-gradient(rgba(154,134,255,1), rgba(154,134,255,1)), url(images/hua3.png) no-repeat center center;
+	 box-shadow:0 0 20px rgba(154,134,255,1);
+}
+49% {
+ background: linear-gradient(rgba(154,134,255,1), rgba(154,134,255,1)), url(images/hua3.png) no-repeat center center;
+  box-shadow:0 0 20px rgba(154,134,255,1);
+}
+ 50% {
+ background: linear-gradient(rgba(154,134,255,0), rgba(154,134,255,0)), url(images/hua3.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(154,134,255,0);
+}
+ 100% {
+ background: linear-gradient(rgba(154,134,255,0), rgba(154,134,255,0)), url(images/hua3.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(154,134,255,0);
+}
+}
+ @-webkit-keyframes yanse3 {
+  0% {
+	 background:-webkit-linear-gradient(rgba(154,134,255,1), rgba(154,134,255,1)), url(images/hua3.png) no-repeat center center;
+	 box-shadow:0 0 20px rgba(154,134,255,1);
+}
+49% {
+ background:-webkit-linear-gradient(rgba(154,134,255,1), rgba(154,134,255,1)), url(images/hua3.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(154,134,255,1);
+}
+ 50% {
+ background:-webkit-linear-gradient(rgba(154,134,255,0), rgba(154,134,255,0)), url(images/hua3.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(154,134,255,0);
+}
+ 100% {
+ background: -webkit-linear-gradient(rgba(154,134,255,0), rgba(154,134,255,0)), url(images/hua3.png) no-repeat center center;
+ box-shadow:0 0 20px rgba(154,134,255,0);
+}
+}
+@keyframes touming{
+	0%{ opacity:1}
+	85%{ opacity:1}
+	100%{ opacity:0}
+	
+	}
+@-webkit-keyframes touming{
+	0%{ opacity:1}
+	85%{ opacity:1}
+	100%{ opacity:0}
+	
+	}
+@keyframes opc{
+	from{ opacity:0}
+	to{ opacity:1}
+	}
+	@-webkit-keyframes opc{
+	from{ opacity:0}
+	to{ opacity:1}
+	}
+@keyframes topopc{
+	from{ opacity:0; transform:translateY(30%)}
+	to{ opacity:1;transform:translateY(0)}
+	}
+	@-webkit-keyframes topopc{
+	from{ opacity:0;-webkit-transform:translateY(30%)}
+	to{ opacity:1;-webkit-transform:translateY(0)}
+	}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="button large round red" href="http://blog.fdos.xyz/">本站博客</a>
+<a class="button large round orange" href="/index-show.html">装修界面</a>
+  <div class="yanhua1"> </div>
+  <div class="yanhua2"> </div>
+  <div class="yanhua3"> </div>
+  <div class="land"> <img src="images/land.png"> </div>
+  <div class="ren1"> <img src="images/ren2.png"> </div>
+  <div class="ren2"> <img src="images/ren1.png"> </div>
+  <div class="ren3"> <img src="images/ren3.png"> </div>
+  <div class="ren4"> <img src="images/ren4.png"> </div>
+  <div class="zhounian"> <img src="images/peace.png"> </div>
+  <div class="zhounian2"> <img src="images/70.png"> </div>
+</div>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>&nbsp;</p>
+</div>
+</body>
+</html>
