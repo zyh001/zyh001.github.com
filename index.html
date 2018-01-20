@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERROR 404^_^</title>
+
+<link rel="stylesheet" type="text/css" href="dest/css/normalize.css" />
+<link rel="stylesheet" href="dest/css/style.css">
+
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+			<div class="full-center">
+				<h1 class="header__heading">Stack's website</h1>
+				<h3 class="subscribe">这是一个坑！<br>大坑！！<br>有空再填，也可能不填.</h3>
+				<h3 class="subscribe">原网页：<a href="index-show.html" target="_blank">看这里</a></h3>
+			</div>
+			<div class="arrow__btn">
+				<a href="#main" class="btn">
+					<img src="dest/img/download.svg" alt="" width="50" height="50">
+				</a>
+			</div>
+	</header>
+</div>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="dest/main.js"></script>
+<script src="dest/circleMagic.min.js"></script>
+<script>
+		$('.header').circleMagic({
+			elem: '.header',
+			radius: 35,
+			densety: .3,
+			color: 'rgba(255,255,255, .4)',
+			//color: 'random',
+			clearOffset: .3
+		});
+</script>
+
+</body>
+</html>

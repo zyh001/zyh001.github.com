@@ -1,0 +1,29 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
+a:link,a:visited{text-decoration: none;}
+a img{border: 0;}
+ul li{list-style: none;}
+input:focus{outline: none;}
+/*兼容性解决 安卓原生浏览器在加了bg后才渲染为block*/
+/* 清理浮动 */
+.f-clear:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.f-clear {zoom:1;}/* for IE6 IE7 */
+body{margin: 0;padding: 0;font-family:"微软雅黑";background: #F1F5F8;}
+.wrapper{width: 640px; background: #F1F5F8;  margin:0 auto;}
+.clear{clear: both}
+@keyframes shandong{
+	0%{ opacity:0}
+	20%{ opacity:1}
+	40%{ opacity:0}
+	60%{ opacity:1}
+	100%{ opacity:1}
+	
+	}
+	@-webkit-keyframes shandong{
+	0%{ opacity:0}
+	20%{ opacity:1}
+	40%{ opacity:0}
+	60%{ opacity:1}
+	100%{ opacity:1}
+	
+	}
